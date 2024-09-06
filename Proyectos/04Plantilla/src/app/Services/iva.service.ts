@@ -13,7 +13,7 @@ export interface IIVA {
   providedIn: 'root'
 })
 export class IVAService {
-  apiurl = 'http://localhost/sexto-main/Proyectos/03MVC/controllers/iva.controller.php?op=';
+  apiurl = 'http://localhost/sexto/Proyectos/03MVC/controllers/iva.controller.php?op=';
 
   constructor(private http: HttpClient) {}
 
