@@ -46,17 +46,7 @@ switch ($_GET["op"]) {
         echo json_encode($datos);
         break;
         //TODO: Procedimeinto para actualziar un proveedor en la base de datos
-    case 'actualizar':
-        $idProveedores = $_POST["idProveedores"];
-        $Nombre_Empresa = $_POST["Nombre_Empresa"];
-        $Direccion = $_POST["Direccion"];
-        $Telefono = $_POST["Telefono"];
-        $Contacto_Empresa = $_POST["Contacto_Empresa"];
-        $Teleofno_Contacto = $_POST["Teleofno_Contacto"];
-        $datos = array();
-        $datos = $proveedores->actualizar($idProveedores, $Nombre_Empresa, $Direccion, $Telefono, $Contacto_Empresa, $Teleofno_Contacto);
-        echo json_encode($datos);
-        break;
+    
         //TODO: Procedimeinto para eliminar un proveedor en la base de datos
     case 'eliminar':
         $idProveedores = $_POST["idProveedores"];
